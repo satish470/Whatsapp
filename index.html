@@ -1,0 +1,520 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/91c30d7901.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionfirstpage">
+        <nav id="navbar">
+            <div>
+                <div class="headder-top">
+                    <h1 class="logo">WhatsApp</h1>
+                    <div class="headder-icons">
+                        <!-- <input type="text" placeholder="Search" class="search-box"> -->
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <i class="fa-solid fa-ellipsis-vertical menu-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class=headder-bottom>
+                <i class="fa-solid fa-camera camera-icon"></i>
+                <h1 class="chats" onclick="display('sectionfirstpage')">CHATS</h1>
+                <h1 class="status" onclick="display('sectionall-status')">STATUS</h1>
+                <h1 class="calls" onclick="display('sectioncallpage')">CALLS</h1>
+            </div>
+        </nav>
+        <i class="fa-solid fa-message chat-icon" onclick="display('sectionwarninng-page-chat')"></i>
+        <!--- -------------    Contacts List  --------------------->
+        <div id="all-contact">
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAArDfnyDRlU0Oruo44GecT6YVbHnN2_P2Nw&usqp=CAU" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Alex</h1>
+                        <p>Hi Alex</p>
+                    </div>
+                    <p class="time">16:00 PM</p>
+                </div>
+            </div>
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2hbCGwg4AdrbhtV4zP235xiwG5LCoO2hPw&usqp=CAU" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Johnny</h1>
+                        <p>Hello Jhon</p>
+                    </div>
+                    <p class="time">6:00 PM</p>
+                </div>
+            </div>
+
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi7gh5_V2xjmZwbrLeTIStb6BjJy7FXxFRiw&usqp=CAU" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Rahul</h1>
+                        <p>Hey Rahul</p>
+                    </div>
+                    <p class="time">2:00 AM</p>
+                </div>
+            </div>
+
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUGUMvAykmhme99Bl_1kHVoZf137XQU-Xrsg&usqp=CAU" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Pooja</h1>
+                        <p>Hi Pooja how are you?</p>
+                    </div>
+                    <p class="time">3:00 PM</p>
+                </div>
+            </div>
+            <div onclick="display('sectionchatpage1')">
+
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://i.postimg.cc/KztnLgnT/IMG-20220909-101652.jpg" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Aswanth</h1>
+                        <p>Hi Aswanth</p>
+                    </div>
+                    <p class="time">10:00 PM</p>
+                </div>
+            </div>
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8GufLeUL9E_W1brfPlbYFHrl9gghmFZ9ZA&usqp=CAU" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Paul</h1>
+                        <p>Good Morning Paul</p>
+                    </div>
+                    <p class="time">6:00 AM</p>
+                </div>
+            </div>
+            <div onclick="display('sectionchatpage1')">
+
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb2rhein02nOvnJ5jK3QmwH0l6DAfPtbV7g&usqp=CAU" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Alex</h1>
+                        <p>Hi Alex</p>
+                    </div>
+                    <p class="time">12:00 PM</p>
+                </div>
+            </div>
+
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQhB_ikq_ySRnHAi1YoqzO3N5yiy6VaIv9A&usqp=CAU" class="profile" /></div>
+                    <div class="name-disc">
+                        <h1>Amanda</h1>
+                        <p>Hi Amanda</p>
+                    </div>
+                    <p class="time">5:00 PM</p>
+                </div>
+            </div>
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eOgGYKPGjGnctu9SSifZ60OwpSIzckWeqg&usqp=CAU" class="profile" /> </div>
+                    <div class="name-disc">
+                        <h1>Lisa</h1>
+                        <p>Hi Lisa</p>
+                    </div>
+                    <p class="time">10:00 AM</p>
+                </div>
+            </div>
+            <div onclick="display('sectionchatpage1')">
+                <div class="contact-container">
+                    <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL98bFV8GFYNg0Ao3cRqLtn8QQp-kl96aWrA&usqp=CAU" class="profile" /> </div>
+                    <div class="name-disc">
+                        <h1>Jennifer</h1>
+                        <p>Hi jenny</p>
+                    </div>
+                    <p class="time">9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionwarninng-page-chat">
+        <nav class="add-contact-navbar">
+            <div>
+                <div class="add-contact-headder-top">
+                    <i class="fa-solid fa-arrow-left add-contact-back-indicator" onclick="display('sectionfirstpage')"></i>
+                    <h1 class="add-contact-logo">Add contact</h1>
+                    <div class="add-contact-headder-icons">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <i class="fa-solid fa-ellipsis-vertical menu-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="sectionchatpage1">
+        <nav id="contact-section">
+            <div class="contact-navbar">
+                <i class="fa-solid fa-arrow-left back-indicator" onclick="display('sectionfirstpage')"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwH5VF4ZF6NBxi8_lxB16Q4QWFB4tIH7jt9g&usqp=CAU" style=" ">
+                <div>
+                    <h1>satish</h1>
+                    <p>last seen 9:30pm</p>
+                </div>
+                <div class="contact-nav-icons">
+                    <i class="fa-solid fa-video video-icon"></i>
+                    <i class="fa-solid fa-phone phone-icon"></i>
+                    <i class="fa-solid fa-ellipsis-vertical dots-icon"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="text-area">
+            <h1>.</h1>
+            <div id="cautious">
+                <div>
+                    <h1><i class="fa-solid fa-triangle-exclamation"></i>ATTENTION</h1>
+                    <p>This page is under developement process</p>
+                    <button class="btn btn-danger" onclick="display('sectionfirstpage')">Back</button>
+                </div>
+            </div>
+            <div class="message-area">
+                <div class="message-box">
+                    <i class="fa-regular fa-face-smile smile"></i>
+                    <input type="text" placeholder="Message" class="msg-box">
+                    <div class="message-icons"> <i class="fa-solid fa-paperclip paperclip"></i>
+                        <i class="fa-solid fa-indian-rupee-sign rupee-symbol"></i>
+                        <i class="fa-solid fa-camera camera"></i>
+                    </div>
+                </div>
+                <div><i class="fa-solid fa-microphone microphone"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionall-status">
+        <nav id="navbar">
+            <div>
+                <div class="headder-top">
+                    <h1 class="logo">WhatsApp</h1>
+                    <div class="headder-icons">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <i class="fa-solid fa-ellipsis-vertical menu-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class=headder-bottom>
+                <i class="fa-solid fa-camera camera-icon"></i>
+                <h1 class="chats" onclick="display('sectionfirstpage')">CHATS</h1>
+                <h1 class="status" onclick="display('sectionall-status')">STATUS</h1>
+                <h1 class="calls" onclick="display('sectioncallpage')">CALLS</h1>
+            </div>
+        </nav>
+        <div class="status-post-icons">
+            <i class="fa-solid fa-pencil status-pencil-icon" onclick="display('sectionwarninng-page')"></i>
+            <i class="fa-solid fa-camera status-camera-icon" onclick="display('sectionwarninng-page')"></i>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://i.postimg.cc/nLL8GDNS/IMG-20220222-201709.jpg" class="profile" style="border-style:none" /><i class="fa-solid fa-plus add-status-icon"></i></div>
+                <div class="name-disc">
+                    <h1>Satish</h1>
+                    <p>Tap to add status update</p>
+                </div>
+            </div>
+        </div>
+        <p class="status-bar" style="color:grey; font-size:13px;margin-left:10px">Recent updates</p>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://i.postimg.cc/KztnLgnT/IMG-20220909-101652.jpg" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Aswanth</h1>
+                    <p>Today, 7:46AM</p>
+                </div>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2hbCGwg4AdrbhtV4zP235xiwG5LCoO2hPw&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Johnny</h1>
+                    <p>Just Now</p>
+                </div>
+
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi7gh5_V2xjmZwbrLeTIStb6BjJy7FXxFRiw&usqp=CAU" class="profile" style="border-style:solid;border-color:#008069" /></div>
+                <div class="name-disc">
+                    <h1>Rahul</h1>
+                    <p>Today, 6:23AM</p>
+                </div>
+
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUGUMvAykmhme99Bl_1kHVoZf137XQU-Xrsg&usqp=CAU" class="profile" style="border-style:dotted;border-color:#008069" /></div>
+                <div class="name-disc">
+                    <h1>Pooja</h1>
+                    <p>Today, 12:15PM</p>
+                </div>
+
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8GufLeUL9E_W1brfPlbYFHrl9gghmFZ9ZA&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Paul</h1>
+                    <p>Yesterday, 8:12AM</p>
+                </div>
+
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb2rhein02nOvnJ5jK3QmwH0l6DAfPtbV7g&usqp=CAU" class="profile" style="border-style:solid;border-color:#008069" /></div>
+                <div class="name-disc">
+                    <h1>Alex</h1>
+                    <p>Yesterday, 6:35PM</p>
+                </div>
+
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL98bFV8GFYNg0Ao3cRqLtn8QQp-kl96aWrA&usqp=CAU" class="profile" style="border-style:dotted;border-color:#008069" /> </div>
+                <div class="name-disc">
+                    <h1>Jennifer</h1>
+                    <p>Yesterday, 7:30PM</p>
+                </div>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQhB_ikq_ySRnHAi1YoqzO3N5yiy6VaIv9A&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Amanda</h1>
+                    <p>Today, 5:30AM</p>
+                </div>
+
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eOgGYKPGjGnctu9SSifZ60OwpSIzckWeqg&usqp=CAU" class="profile" style="border-style:solid" /> </div>
+                <div class="name-disc">
+                    <h1>Lisa</h1>
+                    <p>Yesterday, 9:29AM</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="sectionwarninng-page">
+        <div class="warning d-flex flex-column justify-content-center">
+            <div id="cautious">
+                <h1><i class="fa-solid fa-triangle-exclamation"></i>ATTENTION</h1>
+                <p>This page is under developement process</p>
+                <button class="btn btn-danger" onclick="display('sectionall-status')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectioncallpage">
+        <nav id="navbar">
+            <div>
+                <div class="headder-top">
+                    <h1 class="logo">WhatsApp</h1>
+                    <div class="headder-icons">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <i class="fa-solid fa-ellipsis-vertical menu-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class=headder-bottom>
+                <i class="fa-solid fa-camera camera-icon"></i>
+                <h1 class="chats" onclick="display('sectionfirstpage')">CHATS</h1>
+                <h1 class="status" onclick="display('sectionall-status')">STATUS</h1>
+                <h1 class="calls" onclick="display('sectioncallpage')">CALLS</h1>
+            </div>
+        </nav>
+        <img src="https://i.postimg.cc/VvyyTmcc/phone-2.png" onclick="display('sectionwarninng-page-call')" class="calladd-icon" />
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA2hbCGwg4AdrbhtV4zP235xiwG5LCoO2hPw&usqp=CAU" class="profile"></div>
+                <div class="name-disc">
+                    <h1>Johnny</h1>
+                    <p>Today,9:57 AM</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-video"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi7gh5_V2xjmZwbrLeTIStb6BjJy7FXxFRiw&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Rahul</h1>
+                    <p>Today,7:15 AM</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAArDfnyDRlU0Oruo44GecT6YVbHnN2_P2Nw&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Alex</h1>
+                    <p>11/09/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eOgGYKPGjGnctu9SSifZ60OwpSIzckWeqg&usqp=CAU" class="profile" /> </div>
+                <div class="name-disc">
+                    <h1>Lisa</h1>
+                    <p>25/08/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUGUMvAykmhme99Bl_1kHVoZf137XQU-Xrsg&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Pooja</h1>
+                    <p>11/09/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://i.postimg.cc/KztnLgnT/IMG-20220909-101652.jpg" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Aswanth</h1>
+                    <p>10/09/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-video"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eOgGYKPGjGnctu9SSifZ60OwpSIzckWeqg&usqp=CAU" class="profile" /> </div>
+                <div class="name-disc">
+                    <h1>Lisa</h1>
+                    <p>22/09/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb2rhein02nOvnJ5jK3QmwH0l6DAfPtbV7g&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Alex</h1>
+                    <p>23/09/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-video"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8GufLeUL9E_W1brfPlbYFHrl9gghmFZ9ZA&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Paul</h1>
+                    <p>10/09/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eOgGYKPGjGnctu9SSifZ60OwpSIzckWeqg&usqp=CAU" class="profile" /> </div>
+                <div class="name-disc">
+                    <h1>Lisa</h1>
+                    <p>02/09/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-video"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAArDfnyDRlU0Oruo44GecT6YVbHnN2_P2Nw&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Alex</h1>
+                    <p>20/08/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQhB_ikq_ySRnHAi1YoqzO3N5yiy6VaIv9A&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Amanda</h1>
+                    <p>20/02/2022</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-video"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2eOgGYKPGjGnctu9SSifZ60OwpSIzckWeqg&usqp=CAU" class="profile" /> </div>
+                <div class="name-disc">
+                    <h1>Lisa</h1>
+                    <p>16/02/2023</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-phone"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL98bFV8GFYNg0Ao3cRqLtn8QQp-kl96aWrA&usqp=CAU" class="profile" /> </div>
+                <div class="name-disc">
+                    <h1>Jennifer</h1>
+                    <p>Yesterday,8:30 PM</p>
+                </div>
+
+                <p class="call-page-icons" onclick="display('sectionchatpage1')"><i class="fa-solid fa-video" onclick="display('sectionfirstpage')"></i></p>
+            </div>
+        </div>
+        <div onclick="display('sectionwarninng-page-call')">
+
+            <div class="contact-container">
+                <div class="profile-container"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb2rhein02nOvnJ5jK3QmwH0l6DAfPtbV7g&usqp=CAU" class="profile" /></div>
+                <div class="name-disc">
+                    <h1>Alex</h1>
+                    <p>Yesterday,6:30 AM</p>
+                </div>
+                <p class="call-page-icons"><i class="fa-solid fa-video"></i></p>
+            </div>
+        </div>
+    </div>
+    <div id="sectionwarninng-page-call">
+        <div class="warning d-flex flex-column justify-content-center">
+            <div id="cautious">
+                <h1><i class="fa-solid fa-triangle-exclamation"></i>ATTENTION</h1>
+                <p>This page is under developement process</p>
+                <button class="btn btn-danger" onclick="display('sectioncallpage')">Back</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+  
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

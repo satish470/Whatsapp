@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', Sans-Serif;
+    font-weight: 700;
+
+}
+
+/*    --------------          header    ----------------        */
+.headder-top {
+    display: flex;
+    /* border: 2px solid red;*/
+    padding: 25px;
+    position: relative;
+    color: white;
+}
+
+.headder-icons {
+    position: absolute;
+    /* border: 2px solid red;*/
+    right: 2%;
+    top: 15%;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.search-icon {
+    padding: 8px;
+    /* border: 1px solid red;*/
+    margin-right: 10px;
+}
+
+.menu-icon {
+    padding: 10px;
+    /* border: 1px solid red;*/
+}
+
+
+.headder-bottom {
+    display: flex;
+    text-align: center;
+    /*border: 2px solid red;*/
+}
+
+
+
+.camera-icon {
+    /*border: 2px solid red;*/
+    margin: 0;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.chats,
+.calls,
+.status,
+.camera-icon {
+    padding: 10px;
+    margin: auto;
+
+}
+
+.calls:hover,
+.status:hover,
+.camera-icon:hover,
+.chats:hover {
+    color: white;
+    border-width: 0;
+    border-bottom-width: 3px;
+    border-style: solid;
+}
+
+#navbar {
+    background-color: #008069;
+    position: sticky;
+    top: -82px;
+    z-index: 1;
+}
+
+#sectionfirstpage .chats {
+    color: white;
+    border: 2px solid white;
+    border-width: 0px 0px 3px 0px;
+}
+
+#sectionall-status .status {
+    color: white;
+    border: 2px solid white;
+    border-width: 0px 0px 3px 0px;
+}
+
+#sectioncallpage .calls {
+    color: white;
+    border: 2px solid white;
+    border-width: 0px 0px 3px 0px;
+}
+
+/*-------------------     Chat Icon   -------------------*/
+.chat-icon {
+    background-color: #00a884;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+/*   -----------------   Contact Seaction    ------------------     */
+.profile-container {
+    width: 50px;
+    position: relative;
+    /* border: 2px solid red;*/
+}
+
+.profile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px 0px 0px 2px;
+    /* border: 1px solid red;*/
+}
+
+.time {
+    position: absolute;
+    right: 8px;
+    top: 15%;
+}
+
+.name-disc {
+    margin-left: 25px;
+    position: relative;
+}
+
+.contact-container {
+    display: flex;
+    /*border: 2px solid red;*/
+    margin: 10px 8px;
+    position: relative;
+
+}
+
+.contact-container:hover {
+    background-color: lightgrey;
+}
+
+
+
+
+
+/* -------------   Chat Page    --------------*/
+.contact-navbar {
+    display: flex;
+    position: relative;
+    background-color: #008069;
+    color: white;
+    padding: 10px;
+}
+
+.back-indicator {
+    padding: 10px;
+    /* border: 1px solid red;*/
+}
+
+#contact-section {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.contact-navbar h1,
+.contact-navbar p {
+    /*border: 1px solid red;*/
+    margin-left: 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.contact-navbar p {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.contact-navbar img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%
+}
+
+.video-icon,
+.phone-icon,
+.dots-icon {
+    font-size: 18px;
+    /* border: 1px solid red;*/
+    padding: 8px;
+}
+
+.contact-nav-icons {
+    position: absolute;
+    right: 2px;
+}
+
+.text-area {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIqw9m-ekKKqWqR6oOfyF369qyapDUSLTjw&usqp=CAU");
+    background-size: cover;
+    height: 92vh;
+    width: 100vw;
+    position: relative;
+}
+
+/*   ------------   Message Box   --------------*/
+.message-area {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+}
+
+.message-box {
+    width: 85vw;
+    display: flex;
+    padding: 6px;
+    border-radius: 25px;
+    background-color: white;
+    /* border: 2px solid red;*/
+}
+
+.smile,
+.paperclip,
+.rupee-symbol,
+.camera {
+    /*  border: 1px solid red;*/
+    padding: 2px;
+}
+
+.message-icons {
+    /* border: 1px solid red;*/
+    position: absolute;
+    right: 55px;
+}
+
+.msg-box {
+    border-style: none;
+    border-width: 0;
+    outline: none;
+}
+
+.microphone {
+    background-color: #008069;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+#cautious {
+    background-color: lightyellow;
+    color: red;
+    margin: 50px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+#cautious h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.add-contact-navbar {
+    background-color: #008069;
+    padding: 30px;
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    z-index: 1;
+
+}
+
+.add-contact-logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 6px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.add-contact-headder-icons {
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+
+.add-contact-back-indicator {
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    top: 35%;
+    left: 4%;
+}
+
+.add-contact-name {}
+
+.add-contact-name h1 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 13%;
+    margin-left: 15px;
+    /*border: 2px solid red;*/
+}
+
+.add-contact-container {
+    display: flex;
+    position: relative;
+    margin: 3% 5%;
+    /*  border: 2px solid red;*/
+}
+
+.QRcode {
+    position: absolute;
+    font-size: 20px;
+    right: 3%;
+    top: 25%;
+    color: grey;
+}
+
+.add-contact-profile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/*    ----------------------    STATUS POST ICONS  ------------------*/
+
+.status-pencil-icon {
+    background-color: #e9edef;
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 78px;
+    right: 11px;
+    z-index: 1;
+}
+
+.status-camera-icon {
+    font-size: 20px;
+    background-color: #00a884;
+    display: block;
+    color: white;
+    padding: 18px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.add-status-icon {
+    position: absolute;
+    right: 2px;
+    bottom: 7px;
+    padding: 4px;
+    color: white;
+    background-color: #008069;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#sectionall-status img {
+    border: 2.5px dashed grey;
+}
+
+.warning {
+    background-image: url("https://wallpaperaccess.com/full/796839.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.status-nav {
+    color: white;
+    background-color: black;
+    height: 10vh;
+}
+
+/*       --------------------------  call page   ----------------*/
+
+.call-page-icons {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    color: #00a884;
+    padding: 15px;
+}
+
+.calladd-icon {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+    background-color: #00a884;
+    padding: 15px;
+    height: 55px;
+    border-radius: 50%;
+
+}
+
+/*   -------------------Responsive layout  -----------------*/
+
+@media (max-width:575px) {
+
+    .search-icon,
+    .menu-icon {
+        font-size: 18px;
+    }
+
+    .camera-icon,
+    .status,
+    .calls,
+    .chats {
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .profile-container {
+        width: 60px;
+    }
+
+    .add-status-icon {
+        right: 7px;
+        bottom: 8px;
+        padding: 4px;
+        font-size: 13px;
+    }
+
+    .name-disc {
+        font-size: 10px;
+        padding: 0px;
+        padding-top: 8px;
+        /*border: 1px solid red;*/
+        margin-left: 15px;
+    }
+
+    .name-disc p {
+        padding: 0;
+        /* border: 1px solid red;*/
+        margin-top: 0;
+        color: grey;
+        font-size: 13px;
+    }
+
+    .name-disc h1 {
+        font-size: 18px;
+        font-weight: bold;
+        /*border: 1px solid red;*/
+        margin-bottom: 0;
+    }
+
+    .time {
+        font-size: 10px;
+        /* border: 1px solid red;*/
+    }
+
+    .text-area {
+        height: 95vh;
+    }
+
+    .contact-container {
+        display: flex;
+        /*border: 2px solid red;*/
+        margin: 10px 15px;
+        position: relative;
+
+    }
+}
+
+@media (min-width:576px) {
+
+    .search-icon,
+    .menu-icon {
+        font-size: 18px;
+    }
+
+    .camera-icon,
+    .status,
+    .calls,
+    .chats {
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .profile-container {
+        width: 80px;
+    }
+
+    .profile {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin: 5px 0px 0px 2px;
+        /* border: 1px solid red;*/
+    }
+
+    .add-status-icon {
+        right: 7px;
+        bottom: 5px;
+        padding: 4px;
+
+    }
+
+    .name-disc {
+        font-size: 10px;
+        padding: 0px;
+        padding-top: 8px;
+        /*border: 1px solid red;*/
+        margin-left: 15px;
+    }
+
+    .name-disc p {
+        padding: 0;
+        /* border: 1px solid red;*/
+        margin-top: 0;
+        color: grey;
+        font-size: 13px;
+    }
+
+    .name-disc h1 {
+        font-size: 18px;
+        font-weight: bold;
+        /*border: 1px solid red;*/
+        margin-bottom: 0;
+    }
+
+    .time {
+        font-size: 10px;
+        /* border: 1px solid red;*/
+    }
+
+    .text-area {
+        height: 95vh;
+    }
+
+    .contact-container {
+        display: flex;
+        /*border: 2px solid red;*/
+        margin: 10px 45px;
+        position: relative;
+
+    }
+}
+
+@media (min-width:768px) {
+
+    .search-icon,
+    .menu-icon {
+        font-size: 18px;
+    }
+
+    .camera-icon,
+    .status,
+    .calls,
+    .chats {
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .profile-container {
+        width: 90px;
+    }
+
+    .profile {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin: 5px 0px 0px 2px;
+        /* border: 1px solid red;*/
+    }
+
+    .add-status-icon {
+        right: 13px;
+        bottom: 5px;
+        padding: 4px;
+
+    }
+
+    .name-disc {
+        font-size: 10px;
+        padding: 0px;
+        padding-top: 8px;
+        /*border: 1px solid red;*/
+        margin-left: 15px;
+    }
+
+    .name-disc p {
+        padding: 0;
+        /* border: 1px solid red;*/
+        margin-top: 0;
+        color: grey;
+        font-size: 13px;
+    }
+
+    .name-disc h1 {
+        font-size: 18px;
+        font-weight: bold;
+        /*border: 1px solid red;*/
+        margin-bottom: 0;
+    }
+
+    .time {
+        font-size: 10px;
+        /* border: 1px solid red;*/
+    }
+
+    .text-area {
+        height: 95vh;
+    }
+
+    .contact-container {
+        display: flex;
+        /*border: 2px solid red;*/
+        margin: 10px 50px;
+        position: relative;
+
+    }
+}
+
+@media (min-width:992px) {
+
+    .search-icon,
+    .menu-icon {
+        font-size: 18px;
+    }
+
+    .camera-icon,
+    .status,
+    .calls,
+    .chats {
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    .logo {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .profile-container {
+        width: 100px;
+    }
+
+    .profile {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin: 5px 0px 0px 2px;
+        /* border: 1px solid red;*/
+    }
+
+    .add-status-icon {
+        font-size: 20px;
+        right: 15px;
+        bottom: 5px;
+        padding: 4px;
+
+    }
+
+    .name-disc {
+        font-size: 10px;
+        padding: 0px;
+        padding-top: 8px;
+        /*border: 1px solid red;*/
+        margin-left: 15px;
+    }
+
+    .name-disc p {
+        padding: 0;
+        /* border: 1px solid red;*/
+        margin-top: 0;
+        color: grey;
+        font-size: 13px;
+    }
+
+    .name-disc h1 {
+        font-size: 18px;
+        font-weight: bold;
+        /*border: 1px solid red;*/
+        margin-bottom: 0;
+    }
+
+    .time {
+        font-size: 10px;
+        /* border: 1px solid red;*/
+    }
+
+    .text-area {
+        height: 95vh;
+    }
+
+    .contact-container {
+        display: flex;
+        /*border: 2px solid red;*/
+        margin: 10px 50px;
+        position: relative;
+
+    }
+  }
